@@ -1,0 +1,88 @@
+# Description of dependencies before project execution:-
+
+connect-flash: use for show the flash message like “your product is              added”.  
+Ejs : Ejs file we use to show the pages. It works as template. 
+Express : Use to create server.  
+Express-session : This is the server side storage generally flash message store in this
+Mongodb : Use to store the data  
+Mongoose :connect our server with mongodb we use this 
+Nodemon : Nodemon is a command-line tool that helps with the speedy development of Node.
+Method-override: Method-override is a middleware for Express.js that allows you to use HTTP verbs such as PUT or DELETE in places where the client doesn't support it natively.
+Passport: Passport is authentication middleware for Node.js. It provides a comprehensive set of strategies for authenticating users.
+Passport-local: Passport-local is a strategy for Passport that authenticates users using a username and password.
+Passport-local-mongoose: Passport-local-mongoose is a Mongoose plugin that simplifies building username and password login with Passport.
+Stripe: Stripe is a payment processing platform. To interact with it in your Node.js application, you can use their official library.
+
+
+# Installation process and guidelines of installing the dependencies:-
+
+Sure, here's a step-by-step guide to installing each of the mentioned dependencies for a Node.js application:
+
+1. Express: Express is a web application framework for Node.js. It provides a robust set of features for building web applications.
+
+npm install express
+
+2. EJS (Embedded JavaScript): EJS is a simple templating language that lets you generate HTML markup with JavaScript.
+
+npm install ejs
+
+3. Express-session: Express-session is a middleware for Express.js that enables session management in your application.
+
+npm install express-session
+
+44. Connect-flash: Connect-flash is a middleware used to store and retrieve flash messages in your application.
+
+npm install connect-flash
+
+5. Joi: Joi is a schema description language and data validator for JavaScript. It's useful for validating user input.
+
+npm install joi
+
+6. Method-override: Method-override is a middleware for Express.js that allows you to use HTTP verbs such as PUT or DELETE in places where the client doesn't support it natively.
+
+npm install method-override
+
+7. Mongoose: Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a straightforward schema-based solution to model your application data.
+
+npm install mongoose
+
+8. Nodemon: Nodemon is a utility that monitors changes in your Node.js application and automatically restarts the server.
+
+npm install nodemon --save-dev
+
+9. Passport: Passport is authentication middleware for Node.js. It provides a comprehensive set of strategies for authenticating users.
+bash
+
+npm install passport
+
+10. Passport-local: Passport-local is a strategy for Passport that authenticates users using a username and password.
+
+npm install passport-local
+
+11. Passport-local-mongoose: Passport-local-mongoose is a Mongoose plugin that simplifies building username and password login with Passport.
+
+npm install passport-local-mongoose
+
+12. Stripe: Stripe is a payment processing platform. To interact with it in your Node.js application, you can use their official library.
+
+npm install stripe
+
+After installing these dependencies, you can start using them in your Node.js application. Remember to configure each dependency according to your application's requirements. You may need to set up routes, middleware, views, and database connections based on the functionality you want to implement.
+
+
+# Steps how to execute the project:-
+
+1)We install the all dependencies like nodemon,express,passport etc.
+2)then we require all dependencies in main file ‘aap.js’
+3)using mongoose we connect our server with mongodb and then we  create  models to store the  product ,Review and User data in mongodb
+4)then we make the api with the help of  router( object of express ) and their methods like get ,post ,patch etc.
+5)we made routes with their use case like for go on product page  we call the product.js route and similar with others.
+6) to show the page we use the views folder  from routes we renders the page.
+7)For every render in routes we make a views page like for authentication we make the login and sign up page. 
+8)In views pages i use the .ejs  and in this for designing i use the bootstrap.
+9)for server side validation like we product valid or not to check we used the  joi schema  in ‘schema.js’
+10)to push some product in website we used the seed.js 
+11)In middleware.js we put the checking condition like islogged in or not , is product author or not and is validate or not .
+12)In public folder we use CSS in which we have used star CSS, whenever we wishlist the product, the color of the star will change from white to black.
+
+
